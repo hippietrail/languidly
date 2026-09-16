@@ -65,16 +65,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         translationContainer.distribution = .fillProportionally
         translationContainer.alignment = .top
         translationContainer.spacing = 16
-        translationContainer.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // Large, highly visible action button
         let randomButton = NSButton(
             title: "Randomize Translation 🎲", target: self, action: #selector(pickRandomTranslation)
         )
-        randomButton.bezelStyle = .rounded
         randomButton.font = NSFont.systemFont(ofSize: 16, weight: .medium)
 
+        // Create an invisible spacer view that eats up all leftover vertical space
+        let verticalSpacer = NSView()
+        verticalSpacer.translatesAutoresizingMaskIntoConstraints = false
+        // Using a hugging priority of 1 means it resists stretching the least,
+        // letting it expand to push everything else away.
+        verticalSpacer.setContentHuggingPriority(.defaultLow - 1, for: .vertical)
+
         mainStackView.addArrangedSubview(translationContainer)
+        mainStackView.addArrangedSubview(verticalSpacer)  // Slotted right in the middle
         mainStackView.addArrangedSubview(randomButton)
     }
 
