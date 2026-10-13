@@ -144,11 +144,11 @@ let wordData: [String: [Entry]] = [
     "kitchen": [
         Entry("ms+id", "dapur", alt: "داڤور"),
         Entry("zh", "厨房", alt: "chúfáng"),
-        Entry("th", "ครัว", alt: "khraw"), // or ห้องครัว
+        Entry("th", "ครัว", alt: "khraw"),  // or ห้องครัว
         Entry("ja", "台所", alt: "daidokoro"),
         // ເຮືອນຄົວ (Heuan khua), ຫ້ອງຄົວ (Hong khua)
     ],
-    "know"/* a person */: [
+    "know" /* a person */: [
         Entry("de", "kennen"),
         Entry("es", "conocer"),
         Entry("ms+id", "kenal", alt: "کنل"),
@@ -173,7 +173,7 @@ let wordData: [String: [Entry]] = [
         Entry("ka", "მომწონს", alt: "momcons"),
     ],
     "limit": [
-        Entry("ms", "had", alt: "حد"),
+        Entry("ms", "had", alt: "حد")
     ],
     "look for": [
         Entry("ms+id", "cari", alt: "چاري"),
@@ -182,8 +182,10 @@ let wordData: [String: [Entry]] = [
         Entry("th", "หา", alt: "haa"),
     ],
     "map": [
-        Entry([("ja", "地図", alt: "chizu"),
-               ("zh", "地图", alt: "dìtú")]),
+        Entry([
+            ("ja", "地図", alt: "chizu"),
+            ("zh", "地图", alt: "dìtú"),
+        ]),
         Entry("ms+id", "peta", alt: "ڤتا"),
         Entry("th", "แผนที่", alt: "phaenthí"),
     ],
@@ -196,13 +198,17 @@ let wordData: [String: [Entry]] = [
         Entry("ms+id", "susu", alt: "سوسو"),
         Entry("ka", "რძე", alt: "rdza"),
         Entry("zh", "牛奶", alt: "niúnǎi"),
-        Entry([("th", "นม", alt: "nom"),
-               ("lo", "ນົມ", alt: "nom")]),
+        Entry([
+            ("th", "นม", alt: "nom"),
+            ("lo", "ນົມ", alt: "nom"),
+        ]),
     ],
     "mosquito": [
         Entry("ms+id", "nyamuk", alt: "ڽاموق"),
-        Entry([("lo", "ຍຸງ", alt: "nyung"),
-               ("th", "ยุง", alt: "yung")]),
+        Entry([
+            ("lo", "ຍຸງ", alt: "nyung"),
+            ("th", "ยุง", alt: "yung"),
+        ]),
         Entry("zh", "蚊子", alt: "wénzi"),
     ],
     "near": [
@@ -225,8 +231,10 @@ let wordData: [String: [Entry]] = [
     "to pay": [
         Entry("ms+id", "bayar", alt: "باير"),
         Entry("es", "pagar"),
-        Entry([("th", "จ่าย", alt: "jàai"),
-               ("lo", "ຈ່າຍ", alt: "chāi")]),
+        Entry([
+            ("th", "จ่าย", alt: "jàai"),
+            ("lo", "ຈ່າຍ", alt: "chāi"),
+        ]),
     ],
     "peanut": [
         Entry("ms+id", "kacang", alt: "كاچڠ"),
@@ -253,8 +261,9 @@ let wordData: [String: [Entry]] = [
     ],
     "prohibited": [
         Entry("th", "ห้าม", alt: "hâm"),
-        Entry([("ja", "禁止", alt: "kinshi"),
-               ("zh", "禁止", alt: "jìnzhǐ"),
+        Entry([
+            ("ja", "禁止", alt: "kinshi"),
+            ("zh", "禁止", alt: "jìnzhǐ"),
         ]),
         Entry("ms+id", "dilarang", alt: "دلارڠ"),
     ],
@@ -295,16 +304,19 @@ let wordData: [String: [Entry]] = [
     "room": [
         Entry("ms", "bilik", alt: "بيليق"),
         Entry("id", "kamar"),
-        Entry([("th", "ห้อง", alt: "hong"),
-               ("lo", "ຫ້ອງ", alt: "hong"),
+        Entry([
+            ("th", "ห้อง", alt: "hong"),
+            ("lo", "ຫ້ອງ", alt: "hong"),
         ]),
         Entry("zh", "房间", alt: "fángjiān"),
     ],
     "rubbish": [
         Entry("ms+id", "sampah", alt: "سمڤه"),
         Entry("th", "ขยะ", alt: "kà-yà"),
-        Entry([("zh", "垃圾", alt: "lāji"),
-               ("tw", "垃圾", alt: "lèsè")]),
+        Entry([
+            ("zh", "垃圾", alt: "lāji"),
+            ("tw", "垃圾", alt: "lèsè"),
+        ]),
         Entry("lo", "ຂີ້ເຫຍື້ອ", alt: "khī hư̄ai"),
         Entry("ja", "ゴミ", alt: "gomi"),
         Entry("ko", "쓰레기", alt: "sseuregi"),
@@ -340,8 +352,10 @@ let wordData: [String: [Entry]] = [
     ],
     "spicy": [
         Entry("ms+id", "pedas", alt: "ڤدس"),
-        Entry([("th", "เผ็ด", alt: "ped"),
-               ("lo", "ເຜັດ", alt: "ped")]),
+        Entry([
+            ("th", "เผ็ด", alt: "ped"),
+            ("lo", "ເຜັດ", alt: "ped"),
+        ]),
         Entry("zh", "辣", alt: "là"),
         Entry("vi", "cay"),
     ],
@@ -424,15 +438,19 @@ let wordData: [String: [Entry]] = [
         Entry("th", "อยาก", alt: "yàak"),
         Entry("th", "เอา", alt: "ao"),
         Entry("vi", "muốn"),
-        Entry([("ms", "mahu", alt: "ماهو"),
-               ("id", "mau", alt: nil)]),
+        Entry([
+            ("ms", "mahu", alt: "ماهو"),
+            ("id", "mau", alt: nil),
+        ]),
         Entry("ms", "nak", alt: "نق"),
     ],
     "wet": [
         Entry("ms+id", "basah", alt: "باسه"),
         Entry("zh", "湿", alt: "shī"),
-        Entry([("lo", "ປຽກ", alt: "bpiak"),
-               ("th", "เปียก", alt: "bpiak")]),
+        Entry([
+            ("lo", "ປຽກ", alt: "bpiak"),
+            ("th", "เปียก", alt: "bpiak"),
+        ]),
     ],
     "when": [
         Entry("ms", "bila", alt: "بيلا"),
